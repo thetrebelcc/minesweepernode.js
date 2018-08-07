@@ -16,15 +16,26 @@
 // console.log(bombLine);
 // console.log(blankLine);
 
-var board = [
 
-    ['','',''],
-    ['','',''],
-    ['','','']
+
+const exampleBoard = [
+
+    [' ',' ',' '],
+    [' ',' ',' '],
+    [' ',' ',' ']
 ];
 
-console.log(board);
 
-const printBoard = board => {
+const printBoard = (board) => {
+console.log('current game');
+console.log(board[0].join(' | '));
+console.log(board[1].join(' | '));
+console.log(board[2].join(' | '));
+
 
 };
+
+printBoard(exampleBoard);
+exampleBoard[0][1] ="1"
+exampleBoard[1][0] ="B"
+printBoard(exampleBoard);
